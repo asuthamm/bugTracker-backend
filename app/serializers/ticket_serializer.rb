@@ -1,3 +1,3 @@
 class TicketSerializer < ActiveModel::Serializer
-  attributes :title, :description, :deadline, :status, :category, :attach_link
+  attributes :id, :title, :description, :deadline, :status, :category, :attach_link, :project_id
 end

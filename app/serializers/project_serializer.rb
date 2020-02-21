@@ -1,4 +1,4 @@
 class ProjectSerializer < ActiveModel::Serializer
-  attributes :name, :desription
+  attributes :id, :name, :description
   has_many :tickets
 end

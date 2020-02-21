@@ -9,7 +9,7 @@
 
 alex = User.create(username: 'suthamm', password: 'a', name: 'Alex Suthammanont', role: 'Admin', email: 'asuthamm@gmail.com', img_url: 'https://ca.slack-edge.com/T02MD9XTF-UQLTN7R37-dcc5ff846fc6-48')
 
-proj1 = Project.create(name: 'bugTracker', desription: 'A simple bug tracking app that helps you manage bugs easily', user: alex)
+proj1 = Project.create(name: 'bugTracker', description: 'A simple bug tracking app that helps you manage bugs easily', user: alex)
 
 tix1 = Ticket.create(title: 'Bug-1', description: 'This is my first bug.', deadline: "2020/10/20", status: 'New', category: 'Bug', attach_link: 'https://ca.slack-edge.com/T02MD9XTF-UQLTN7R37-dcc5ff846fc6-48', project: proj1)
 
