@@ -9,11 +9,11 @@ class TicketsController < ApplicationController
   def create
     # byebug
     @ticket = Ticket.create(ticket_params)
-    # if @Ticket
-      render json: {ticket: @ticket}
-    # else
-    #   render json: {error: "Ticket not created"}
-    # end
+    if @ticket
+      render json: @ticket
+    else
+      render json: {error: "Ticket not created"}
+    end
   end
 
   private
