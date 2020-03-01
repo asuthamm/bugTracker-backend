@@ -14,6 +14,7 @@ class ProjectsController < ApplicationController
   def create
     # byebug
     @project = Project.create(project_params)
+    # byebug
     if @project
     render json: @project
     else
