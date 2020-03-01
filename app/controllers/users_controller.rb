@@ -17,6 +17,7 @@ class UsersController < ApplicationController
     @user = User.create(user_params)
     if @user.valid?
       wristband = encode_token({user_id: @user.id})
+      UserNotifierMailer.send_signup_email(@user).deliver
       render json: {user: UserSerializer.new(@user), token: wristband}
     else
       render json: {error: "Invalid username or password"}
