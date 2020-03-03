@@ -22,3 +22,4 @@
 /config/master.key
 /config/environment.rb
 sendgrid.env
+sendgrid.env
